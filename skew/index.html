@@ -6,7 +6,8 @@
     <title>Keyframe Awards x Skew | Founding Partner Announcement</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
-    <link rel="stylesheet" href="style.css">
+    <!-- Use absolute path from domain root -->
+    <link rel="stylesheet" href="/style.css">
 
     <style>
         .partner-banner-link {
@@ -16,12 +17,13 @@
             margin: 25px auto;
             border-radius: 12px;
             overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            border: 1px solid var(--border-purple);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .partner-banner-link:hover {
             transform: translateY(-4px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            border-color: var(--neon-cyan);
         }
         .partner-banner-img {
             width: 100%;
@@ -29,11 +31,18 @@
             display: block;
         }
         .category-box {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: var(--card-bg);
+            border: 1px solid var(--border-purple);
             border-radius: 12px;
             padding: 24px;
             margin: 30px 0;
+        }
+        .category-box h3 {
+            color: var(--neon-cyan);
+            font-size: 1.05rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 12px;
         }
         .category-list {
             list-style: none;
@@ -43,9 +52,14 @@
         .category-list li {
             padding: 12px 16px;
             margin-bottom: 10px;
-            background: rgba(255, 255, 255, 0.05);
-            border-left: 4px solid #a855f7;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 4px solid var(--neon-cyan);
             border-radius: 6px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .category-list li strong {
+            color: #ffffff;
         }
     </style>
 </head>
@@ -92,8 +106,7 @@
 
         <!-- CLICKABLE IMAGE LINK TO SKEW YOUTUBE -->
         <a href="https://www.youtube.com/@skew_1" target="_blank" rel="noopener noreferrer" class="partner-banner-link" aria-label="Visit Skew YouTube Channel">
-            <!-- Points to root directory of press.keyframe-awards.com -->
-            <img src="./skew-keyframe-banner.jpg" alt="Skew x Keyframe Awards Banner" class="partner-banner-img">
+            <img src="/skew-keyframe-banner.jpg" alt="Skew x Keyframe Awards Banner" class="partner-banner-img">
         </a>
 
         <p>The Keyframe Awards is excited to officially introduce <strong>Skew</strong> as an inaugural Founding Partner for the 2026 season. The Keyframe Awards celebrates global digital culture, honoring excellence across <strong>Memes, Music, Football, Live Streaming, Video Editing, Gaming, Movies, TV Series, and Content Creators</strong>.</p>

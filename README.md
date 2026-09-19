@@ -15,6 +15,7 @@ Press releases and official announcements
 Brand assets and media kit downloads
 Information about Keyframe Awards
 Contact details for press and partnerships
+press@keyframe-awards.com
 Related Project
 Main Awards Platform: https://keyframe-awards.com
 Tech Stack
